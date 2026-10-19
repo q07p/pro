@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content=" ">
+	<title>_____</title>
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			overflow: hidden;
+		}
+		iframe {
+			display: block;
+			width: calc(100% - 40px);
+			height: calc(100% - 40px);
+			margin: 20px;
+		}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	</style>
+	<script src="js/min.js"></script>
+	<script src="js/x-frame-bypass.js" type="module"></script>
+</head>
+<body>
+	
+	<iframe is="x-frame-bypass" src="https://drive.google.com/drive/folders/1hjGSdwjHvxR2n8hVg7KqbK2X4BqWHBgA" width="640" height="480" allow="autoplay"></iframe>
+	<a href="index.html"><img src="img/Black.png" alt="вернуть список" ></a>
+
+</body>
+<?php
+    header('X-Frame-Options: GOFORIT'); 
+?>
+</html>
